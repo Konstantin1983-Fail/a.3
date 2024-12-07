@@ -16,6 +16,10 @@ CREATE TABLE IF NOT EXISTS Users (
 ''')
 print("Таблица создана.")
 
+# Очищаем таблицу перед добавлением данных
+cursor.execute('DELETE FROM Users')
+print("Старая информация удалена.")
+
 # Заполняем таблицу 10 записями
 users = [
     (f"User{i}", f"example{i}@gmail.com", i * 10, 1000) for i in range(1, 11)
@@ -34,12 +38,12 @@ WHERE id % 2 = 1
 ''')
 print("Баланс обновлён у каждой 2-й записи.")
 
-# Удаляем каждую 3-ю запись
+# Удаляем записи с ID 1, 3, 5, 7, 9
 cursor.execute('''
 DELETE FROM Users
-WHERE id % 3 = 0
+WHERE id IN (1, 3, 5, 7, 9)
 ''')
-print("Каждая 3-я запись удалена.")
+print("Записи с ID 1, 3, 5, 7, 9 удалены.")
 
 # Выбираем записи, где возраст не равен 60
 cursor.execute('''
