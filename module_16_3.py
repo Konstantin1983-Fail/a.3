@@ -41,7 +41,7 @@ async def delete_user(
         raise HTTPException(status_code=404, detail="User not found")
 
 # Запуск приложения
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8001)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="127.0.0.1", port=8001)
 
