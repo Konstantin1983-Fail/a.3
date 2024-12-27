@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/shop_project.iml" filepath="$PROJECT_DIR$/.idea/shop_project.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/pygame_example.iml" filepath="$PROJECT_DIR$/.idea/pygame_example.iml" />
+>>>>>>> 55610b225b09959c9733238c99358c01d3171652
+    </modules>
+  </component>
+</project>
