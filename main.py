@@ -23,5 +23,4 @@ print(CreateTable(User.__table__).compile(engine))
 print("\nSQL для Task:")
 print(CreateTable(Task.__table__).compile(engine))
 
-# Создание таблиц
-# Base.metadata.create_all(bind=engine)
+
