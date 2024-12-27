@@ -1,22 +1,39 @@
+# Импортируем BaseModel из Pydantic для создания моделей данных
 from pydantic import BaseModel
 
+# Модель для создания нового пользователя
 class CreateUser(BaseModel):
-    username: str
-    firstname: str
-    lastname: str
-    age: int
+    """
+    Модель данных для создания нового пользователя.
+    """
+    username: str  # Имя пользователя (логин)
+    firstname: str  # Имя пользователя
+    lastname: str  # Фамилия пользователя
+    age: int  # Возраст пользователя
 
+# Модель для обновления данных пользователя
 class UpdateUser(BaseModel):
-    firstname: str
-    lastname: str
-    age: int
+    """
+    Модель данных для обновления существующего пользователя.
+    """
+    firstname: str  # Новое имя пользователя
+    lastname: str  # Новая фамилия пользователя
+    age: int  # Новый возраст пользователя
 
+# Модель для создания новой задачи
 class CreateTask(BaseModel):
-    title: str
-    content: str
-    priority: int
+    """
+    Модель данных для создания новой задачи.
+    """
+    title: str  # Заголовок задачи
+    content: str  # Содержание задачи
+    priority: int  # Приоритет задачи
 
+# Модель для обновления данных задачи
 class UpdateTask(BaseModel):
-    title: str
-    content: str
-    priority: int
+    """
+    Модель данных для обновления существующей задачи.
+    """
+    title: str  # Новый заголовок задачи
+    content: str  # Новое содержание задачи
+    priority: int  # Новый приоритет задачи
